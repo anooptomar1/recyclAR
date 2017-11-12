@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42CBE8634FB6610FE8DD205C /* Pods_RecyclARTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ADF44FD8D225EB9A8175B9 /* Pods_RecyclARTests.framework */; };
+		658490283D8F4213276E94D8 /* Pods_RecyclARUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258D2E05116983758D60DCCA /* Pods_RecyclARUITests.framework */; };
+		9739A0491FB7C3D200225F6C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9739A04A1FB7C3D200225F6C /* SwiftyJSON.framework */; };
+		9758734D1FB7C0D200A9F26C /* GoogleAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9758734C1FB7C0D200A9F26C /* GoogleAPIHelper.swift */; };
+		97A4BCB21FB6B6A400B848DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4BCB11FB6B6A400B848DC /* AppDelegate.swift */; };
+		97A4BCB41FB6B6A400B848DC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A4BCB31FB6B6A400B848DC /* art.scnassets */; };
+		97A4BCB61FB6B6A400B848DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4BCB51FB6B6A400B848DC /* ViewController.swift */; };
+		97A4BCB91FB6B6A400B848DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A4BCB71FB6B6A400B848DC /* Main.storyboard */; };
+		97A4BCBB1FB6B6A400B848DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A4BCBA1FB6B6A400B848DC /* Assets.xcassets */; };
+		97A4BCBE1FB6B6A400B848DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A4BCBC1FB6B6A400B848DC /* LaunchScreen.storyboard */; };
+		97A4BCC91FB6B6A400B848DC /* RecyclARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4BCC81FB6B6A400B848DC /* RecyclARTests.swift */; };
+		97A4BCD41FB6B6A400B848DC /* RecyclARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4BCD31FB6B6A400B848DC /* RecyclARUITests.swift */; };
+		97A96A471FB7E7C600F4C3FC /* nuclear-power (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A461FB7E7C600F4C3FC /* nuclear-power (1).png */; };
+		97A96A491FB80BF900F4C3FC /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A481FB80BF900F4C3FC /* reload.png */; };
+		97A96A4B1FB80CF000F4C3FC /* recycling.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A4A1FB80CF000F4C3FC /* recycling.png */; };
+		97A96A4D1FB80DC300F4C3FC /* refresh-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A4C1FB80DC300F4C3FC /* refresh-arrow.png */; };
+		97A96A4F1FB80E2900F4C3FC /* refresh-arrow (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A4E1FB80E2900F4C3FC /* refresh-arrow (1).png */; };
+		97A96A511FB826CD00F4C3FC /* AWSDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A96A501FB826CD00F4C3FC /* AWSDBHelper.swift */; };
+		97A96A521FB826EF00F4C3FC /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A681FB826EF00F4C3FC /* AWSAutoScaling.framework */; };
+		97A96A531FB826EF00F4C3FC /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A691FB826EF00F4C3FC /* AWSCloudWatch.framework */; };
+		97A96A541FB826EF00F4C3FC /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A6A1FB826EF00F4C3FC /* AWSCognito.framework */; };
+		97A96A551FB826EF00F4C3FC /* AWSCognitoIdentityProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A6B1FB826EF00F4C3FC /* AWSCognitoIdentityProvider.framework */; };
+		97A96A561FB826EF00F4C3FC /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A6C1FB826EF00F4C3FC /* AWSCore.framework */; };
+		97A96A571FB826EF00F4C3FC /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A6D1FB826EF00F4C3FC /* AWSDynamoDB.framework */; };
+		97A96A581FB826EF00F4C3FC /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A6E1FB826EF00F4C3FC /* AWSEC2.framework */; };
+		97A96A591FB826EF00F4C3FC /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A6F1FB826EF00F4C3FC /* AWSElasticLoadBalancing.framework */; };
+		97A96A5A1FB826EF00F4C3FC /* AWSIoT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A701FB826EF00F4C3FC /* AWSIoT.framework */; };
+		97A96A5B1FB826EF00F4C3FC /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A711FB826EF00F4C3FC /* AWSKinesis.framework */; };
+		97A96A5C1FB826EF00F4C3FC /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A721FB826EF00F4C3FC /* AWSLambda.framework */; };
+		97A96A5D1FB826EF00F4C3FC /* AWSLex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A731FB826EF00F4C3FC /* AWSLex.framework */; };
+		97A96A5E1FB826EF00F4C3FC /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A741FB826EF00F4C3FC /* AWSMachineLearning.framework */; };
+		97A96A5F1FB826EF00F4C3FC /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A751FB826EF00F4C3FC /* AWSMobileAnalytics.framework */; };
+		97A96A601FB826EF00F4C3FC /* AWSPinpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A761FB826EF00F4C3FC /* AWSPinpoint.framework */; };
+		97A96A611FB826EF00F4C3FC /* AWSPolly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A771FB826EF00F4C3FC /* AWSPolly.framework */; };
+		97A96A621FB826EF00F4C3FC /* AWSRekognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A781FB826EF00F4C3FC /* AWSRekognition.framework */; };
+		97A96A631FB826EF00F4C3FC /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A791FB826EF00F4C3FC /* AWSS3.framework */; };
+		97A96A641FB826EF00F4C3FC /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A7A1FB826EF00F4C3FC /* AWSSES.framework */; };
+		97A96A651FB826EF00F4C3FC /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A7B1FB826EF00F4C3FC /* AWSSimpleDB.framework */; };
+		97A96A661FB826EF00F4C3FC /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A7C1FB826EF00F4C3FC /* AWSSNS.framework */; };
+		97A96A671FB826EF00F4C3FC /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A96A7D1FB826EF00F4C3FC /* AWSSQS.framework */; };
+		97A96A7F1FB83A8B00F4C3FC /* erecycling.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A7E1FB83A8B00F4C3FC /* erecycling.png */; };
+		97A96A811FB8600200F4C3FC /* 001-recycling.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A801FB8600200F4C3FC /* 001-recycling.png */; };
+		97A96A831FB8600B00F4C3FC /* recycling.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A821FB8600B00F4C3FC /* recycling.png */; };
+		97A96A851FB8602300F4C3FC /* nuclear-power (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A841FB8602300F4C3FC /* nuclear-power (1).png */; };
+		97A96A871FB8602E00F4C3FC /* refresh-arrow (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 97A96A861FB8602D00F4C3FC /* refresh-arrow (1).png */; };
+		97B9BAD51FB7398E0086330D /* 002-recycle.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B9BAD41FB7398E0086330D /* 002-recycle.png */; };
+		97B9BAD71FB73A0C0086330D /* 001-recycling.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B9BAD61FB73A0C0086330D /* 001-recycling.png */; };
+		97B9BAD91FB7A5960086330D /* 001-recycling2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B9BAD81FB7A5960086330D /* 001-recycling2.png */; };
+		CB43DCB6C6E9165ED30F12CB /* Pods_RecyclAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD34D9F0EECD73F25C73DB7A /* Pods_RecyclAR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97A4BCC51FB6B6A400B848DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4BCA61FB6B6A300B848DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A4BCAD1FB6B6A400B848DC;
+			remoteInfo = RecyclAR;
+		};
+		97A4BCD01FB6B6A400B848DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4BCA61FB6B6A300B848DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A4BCAD1FB6B6A400B848DC;
+			remoteInfo = RecyclAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		258D2E05116983758D60DCCA /* Pods_RecyclARUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecyclARUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CAB9786E2A56DF153FD49A7 /* Pods-RecyclARUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecyclARUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecyclARUITests/Pods-RecyclARUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65ADF44FD8D225EB9A8175B9 /* Pods_RecyclARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecyclARTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83904A75333D0120D4DA8441 /* Pods-RecyclARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecyclARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecyclARTests/Pods-RecyclARTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BA675759CC38E9B75794285 /* Pods-RecyclARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecyclARTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecyclARTests/Pods-RecyclARTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9739A04A1FB7C3D200225F6C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9758734C1FB7C0D200A9F26C /* GoogleAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPIHelper.swift; sourceTree = "<group>"; };
+		97A4BCAE1FB6B6A400B848DC /* RecyclAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecyclAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A4BCB11FB6B6A400B848DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97A4BCB31FB6B6A400B848DC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		97A4BCB51FB6B6A400B848DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97A4BCB81FB6B6A400B848DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97A4BCBA1FB6B6A400B848DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97A4BCBD1FB6B6A400B848DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97A4BCBF1FB6B6A400B848DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A4BCC41FB6B6A400B848DC /* RecyclARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyclARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A4BCC81FB6B6A400B848DC /* RecyclARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclARTests.swift; sourceTree = "<group>"; };
+		97A4BCCA1FB6B6A400B848DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A4BCCF1FB6B6A400B848DC /* RecyclARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecyclARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A4BCD31FB6B6A400B848DC /* RecyclARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclARUITests.swift; sourceTree = "<group>"; };
+		97A4BCD51FB6B6A400B848DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A96A461FB7E7C600F4C3FC /* nuclear-power (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nuclear-power (1).png"; path = "../../../../Downloads/nuclear-power (1).png"; sourceTree = "<group>"; };
+		97A96A481FB80BF900F4C3FC /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reload.png; path = "../../../../Downloads/126466-multimedia-collection/png/reload.png"; sourceTree = "<group>"; };
+		97A96A4A1FB80CF000F4C3FC /* recycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recycling.png; path = ../../../../Downloads/recycling.png; sourceTree = "<group>"; };
+		97A96A4C1FB80DC300F4C3FC /* refresh-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "refresh-arrow.png"; path = "../../../../Downloads/refresh-arrow.png"; sourceTree = "<group>"; };
+		97A96A4E1FB80E2900F4C3FC /* refresh-arrow (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "refresh-arrow (1).png"; path = "../../../../Downloads/refresh-arrow (1).png"; sourceTree = "<group>"; };
+		97A96A501FB826CD00F4C3FC /* AWSDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSDBHelper.swift; sourceTree = "<group>"; };
+		97A96A681FB826EF00F4C3FC /* AWSAutoScaling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A691FB826EF00F4C3FC /* AWSCloudWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A6A1FB826EF00F4C3FC /* AWSCognito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A6B1FB826EF00F4C3FC /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCognitoIdentityProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A6C1FB826EF00F4C3FC /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A6D1FB826EF00F4C3FC /* AWSDynamoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A6E1FB826EF00F4C3FC /* AWSEC2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSEC2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A6F1FB826EF00F4C3FC /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSElasticLoadBalancing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A701FB826EF00F4C3FC /* AWSIoT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSIoT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A711FB826EF00F4C3FC /* AWSKinesis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSKinesis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A721FB826EF00F4C3FC /* AWSLambda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A731FB826EF00F4C3FC /* AWSLex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSLex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A741FB826EF00F4C3FC /* AWSMachineLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSMachineLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A751FB826EF00F4C3FC /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSMobileAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A761FB826EF00F4C3FC /* AWSPinpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSPinpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A771FB826EF00F4C3FC /* AWSPolly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSPolly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A781FB826EF00F4C3FC /* AWSRekognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSRekognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A791FB826EF00F4C3FC /* AWSS3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A7A1FB826EF00F4C3FC /* AWSSES.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSSES.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A7B1FB826EF00F4C3FC /* AWSSimpleDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A7C1FB826EF00F4C3FC /* AWSSNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A7D1FB826EF00F4C3FC /* AWSSQS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A96A7E1FB83A8B00F4C3FC /* erecycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = erecycling.png; path = ../../../erecycling.png; sourceTree = "<group>"; };
+		97A96A801FB8600200F4C3FC /* 001-recycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "001-recycling.png"; path = "../../../../../Downloads/my-icons-collection (1)/png/001-recycling.png"; sourceTree = "<group>"; };
+		97A96A821FB8600B00F4C3FC /* recycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recycling.png; path = ../../../../../Downloads/recycling.png; sourceTree = "<group>"; };
+		97A96A841FB8602300F4C3FC /* nuclear-power (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nuclear-power (1).png"; path = "../../../../../Downloads/nuclear-power (1).png"; sourceTree = "<group>"; };
+		97A96A861FB8602D00F4C3FC /* refresh-arrow (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "refresh-arrow (1).png"; path = "../../../../../Downloads/refresh-arrow (1).png"; sourceTree = "<group>"; };
+		97B9BAD41FB7398E0086330D /* 002-recycle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "002-recycle.png"; path = "../../../../Downloads/my-icons-collection/png/002-recycle.png"; sourceTree = "<group>"; };
+		97B9BAD61FB73A0C0086330D /* 001-recycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "001-recycling.png"; path = "../../../../Downloads/my-icons-collection (1)/png/001-recycling.png"; sourceTree = "<group>"; };
+		97B9BAD81FB7A5960086330D /* 001-recycling2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "001-recycling2.png"; path = "../../../../Downloads/my-icons-collection (2)/png/001-recycling2.png"; sourceTree = "<group>"; };
+		C8B9A61DEDD557C6E7E40637 /* Pods-RecyclARUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecyclARUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecyclARUITests/Pods-RecyclARUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD016F5F64BB99718DA66B42 /* Pods-RecyclAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecyclAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecyclAR/Pods-RecyclAR.release.xcconfig"; sourceTree = "<group>"; };
+		D846051604D3D5C9CE8BA85C /* Pods-RecyclAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecyclAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecyclAR/Pods-RecyclAR.debug.xcconfig"; sourceTree = "<group>"; };
+		FD34D9F0EECD73F25C73DB7A /* Pods_RecyclAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecyclAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97A4BCAB1FB6B6A400B848DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A96A521FB826EF00F4C3FC /* AWSAutoScaling.framework in Frameworks */,
+				97A96A531FB826EF00F4C3FC /* AWSCloudWatch.framework in Frameworks */,
+				97A96A541FB826EF00F4C3FC /* AWSCognito.framework in Frameworks */,
+				97A96A551FB826EF00F4C3FC /* AWSCognitoIdentityProvider.framework in Frameworks */,
+				97A96A561FB826EF00F4C3FC /* AWSCore.framework in Frameworks */,
+				97A96A571FB826EF00F4C3FC /* AWSDynamoDB.framework in Frameworks */,
+				97A96A581FB826EF00F4C3FC /* AWSEC2.framework in Frameworks */,
+				97A96A591FB826EF00F4C3FC /* AWSElasticLoadBalancing.framework in Frameworks */,
+				97A96A5A1FB826EF00F4C3FC /* AWSIoT.framework in Frameworks */,
+				97A96A5B1FB826EF00F4C3FC /* AWSKinesis.framework in Frameworks */,
+				97A96A5C1FB826EF00F4C3FC /* AWSLambda.framework in Frameworks */,
+				97A96A5D1FB826EF00F4C3FC /* AWSLex.framework in Frameworks */,
+				97A96A5E1FB826EF00F4C3FC /* AWSMachineLearning.framework in Frameworks */,
+				97A96A5F1FB826EF00F4C3FC /* AWSMobileAnalytics.framework in Frameworks */,
+				97A96A601FB826EF00F4C3FC /* AWSPinpoint.framework in Frameworks */,
+				97A96A611FB826EF00F4C3FC /* AWSPolly.framework in Frameworks */,
+				97A96A621FB826EF00F4C3FC /* AWSRekognition.framework in Frameworks */,
+				97A96A631FB826EF00F4C3FC /* AWSS3.framework in Frameworks */,
+				97A96A641FB826EF00F4C3FC /* AWSSES.framework in Frameworks */,
+				97A96A651FB826EF00F4C3FC /* AWSSimpleDB.framework in Frameworks */,
+				97A96A661FB826EF00F4C3FC /* AWSSNS.framework in Frameworks */,
+				97A96A671FB826EF00F4C3FC /* AWSSQS.framework in Frameworks */,
+				9739A0491FB7C3D200225F6C /* SwiftyJSON.framework in Frameworks */,
+				CB43DCB6C6E9165ED30F12CB /* Pods_RecyclAR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A4BCC11FB6B6A400B848DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CBE8634FB6610FE8DD205C /* Pods_RecyclARTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A4BCCC1FB6B6A400B848DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658490283D8F4213276E94D8 /* Pods_RecyclARUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79CDAB811B938C59B0E9EEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A96A681FB826EF00F4C3FC /* AWSAutoScaling.framework */,
+				97A96A691FB826EF00F4C3FC /* AWSCloudWatch.framework */,
+				97A96A6A1FB826EF00F4C3FC /* AWSCognito.framework */,
+				97A96A6B1FB826EF00F4C3FC /* AWSCognitoIdentityProvider.framework */,
+				97A96A6C1FB826EF00F4C3FC /* AWSCore.framework */,
+				97A96A6D1FB826EF00F4C3FC /* AWSDynamoDB.framework */,
+				97A96A6E1FB826EF00F4C3FC /* AWSEC2.framework */,
+				97A96A6F1FB826EF00F4C3FC /* AWSElasticLoadBalancing.framework */,
+				97A96A701FB826EF00F4C3FC /* AWSIoT.framework */,
+				97A96A711FB826EF00F4C3FC /* AWSKinesis.framework */,
+				97A96A721FB826EF00F4C3FC /* AWSLambda.framework */,
+				97A96A731FB826EF00F4C3FC /* AWSLex.framework */,
+				97A96A741FB826EF00F4C3FC /* AWSMachineLearning.framework */,
+				97A96A751FB826EF00F4C3FC /* AWSMobileAnalytics.framework */,
+				97A96A761FB826EF00F4C3FC /* AWSPinpoint.framework */,
+				97A96A771FB826EF00F4C3FC /* AWSPolly.framework */,
+				97A96A781FB826EF00F4C3FC /* AWSRekognition.framework */,
+				97A96A791FB826EF00F4C3FC /* AWSS3.framework */,
+				97A96A7A1FB826EF00F4C3FC /* AWSSES.framework */,
+				97A96A7B1FB826EF00F4C3FC /* AWSSimpleDB.framework */,
+				97A96A7C1FB826EF00F4C3FC /* AWSSNS.framework */,
+				97A96A7D1FB826EF00F4C3FC /* AWSSQS.framework */,
+				9739A04A1FB7C3D200225F6C /* SwiftyJSON.framework */,
+				FD34D9F0EECD73F25C73DB7A /* Pods_RecyclAR.framework */,
+				65ADF44FD8D225EB9A8175B9 /* Pods_RecyclARTests.framework */,
+				258D2E05116983758D60DCCA /* Pods_RecyclARUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97A4BCA51FB6B6A300B848DC = {
+			isa = PBXGroup;
+			children = (
+				97A4BCB01FB6B6A400B848DC /* RecyclAR */,
+				97A4BCC71FB6B6A400B848DC /* RecyclARTests */,
+				97A4BCD21FB6B6A400B848DC /* RecyclARUITests */,
+				97A4BCAF1FB6B6A400B848DC /* Products */,
+				CB124779EAF44BED4D17E558 /* Pods */,
+				79CDAB811B938C59B0E9EEE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97A4BCAF1FB6B6A400B848DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97A4BCAE1FB6B6A400B848DC /* RecyclAR.app */,
+				97A4BCC41FB6B6A400B848DC /* RecyclARTests.xctest */,
+				97A4BCCF1FB6B6A400B848DC /* RecyclARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97A4BCB01FB6B6A400B848DC /* RecyclAR */ = {
+			isa = PBXGroup;
+			children = (
+				97A96A821FB8600B00F4C3FC /* recycling.png */,
+				97A96A4E1FB80E2900F4C3FC /* refresh-arrow (1).png */,
+				97A96A861FB8602D00F4C3FC /* refresh-arrow (1).png */,
+				97A96A841FB8602300F4C3FC /* nuclear-power (1).png */,
+				97A96A801FB8600200F4C3FC /* 001-recycling.png */,
+				97A96A4C1FB80DC300F4C3FC /* refresh-arrow.png */,
+				97A96A4A1FB80CF000F4C3FC /* recycling.png */,
+				97A96A481FB80BF900F4C3FC /* reload.png */,
+				97A96A461FB7E7C600F4C3FC /* nuclear-power (1).png */,
+				97B9BAD81FB7A5960086330D /* 001-recycling2.png */,
+				97B9BAD61FB73A0C0086330D /* 001-recycling.png */,
+				97B9BAD41FB7398E0086330D /* 002-recycle.png */,
+				97A96A7E1FB83A8B00F4C3FC /* erecycling.png */,
+				97A4BCB11FB6B6A400B848DC /* AppDelegate.swift */,
+				97A4BCB31FB6B6A400B848DC /* art.scnassets */,
+				97A4BCB51FB6B6A400B848DC /* ViewController.swift */,
+				97A4BCB71FB6B6A400B848DC /* Main.storyboard */,
+				97A4BCBA1FB6B6A400B848DC /* Assets.xcassets */,
+				97A4BCBC1FB6B6A400B848DC /* LaunchScreen.storyboard */,
+				97A4BCBF1FB6B6A400B848DC /* Info.plist */,
+				9758734C1FB7C0D200A9F26C /* GoogleAPIHelper.swift */,
+				97A96A501FB826CD00F4C3FC /* AWSDBHelper.swift */,
+			);
+			path = RecyclAR;
+			sourceTree = "<group>";
+		};
+		97A4BCC71FB6B6A400B848DC /* RecyclARTests */ = {
+			isa = PBXGroup;
+			children = (
+				97A4BCC81FB6B6A400B848DC /* RecyclARTests.swift */,
+				97A4BCCA1FB6B6A400B848DC /* Info.plist */,
+			);
+			path = RecyclARTests;
+			sourceTree = "<group>";
+		};
+		97A4BCD21FB6B6A400B848DC /* RecyclARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97A4BCD31FB6B6A400B848DC /* RecyclARUITests.swift */,
+				97A4BCD51FB6B6A400B848DC /* Info.plist */,
+			);
+			path = RecyclARUITests;
+			sourceTree = "<group>";
+		};
+		CB124779EAF44BED4D17E558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D846051604D3D5C9CE8BA85C /* Pods-RecyclAR.debug.xcconfig */,
+				CD016F5F64BB99718DA66B42 /* Pods-RecyclAR.release.xcconfig */,
+				8BA675759CC38E9B75794285 /* Pods-RecyclARTests.debug.xcconfig */,
+				83904A75333D0120D4DA8441 /* Pods-RecyclARTests.release.xcconfig */,
+				C8B9A61DEDD557C6E7E40637 /* Pods-RecyclARUITests.debug.xcconfig */,
+				2CAB9786E2A56DF153FD49A7 /* Pods-RecyclARUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97A4BCAD1FB6B6A400B848DC /* RecyclAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A4BCD81FB6B6A400B848DC /* Build configuration list for PBXNativeTarget "RecyclAR" */;
+			buildPhases = (
+				D53D1421B5BE6897E4791A75 /* [CP] Check Pods Manifest.lock */,
+				97A4BCAA1FB6B6A400B848DC /* Sources */,
+				97A4BCAB1FB6B6A400B848DC /* Frameworks */,
+				97A4BCAC1FB6B6A400B848DC /* Resources */,
+				262946A56BC08AD93392D1B3 /* [CP] Embed Pods Frameworks */,
+				EB03BF6216E6E3BBA28060B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecyclAR;
+			productName = RecyclAR;
+			productReference = 97A4BCAE1FB6B6A400B848DC /* RecyclAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97A4BCC31FB6B6A400B848DC /* RecyclARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A4BCDB1FB6B6A400B848DC /* Build configuration list for PBXNativeTarget "RecyclARTests" */;
+			buildPhases = (
+				A4BB8011EE44DE28E12A9F6A /* [CP] Check Pods Manifest.lock */,
+				97A4BCC01FB6B6A400B848DC /* Sources */,
+				97A4BCC11FB6B6A400B848DC /* Frameworks */,
+				97A4BCC21FB6B6A400B848DC /* Resources */,
+				E3482DBBCF8E29D87F438D8F /* [CP] Embed Pods Frameworks */,
+				C2E71051CCC328D84BFA14E6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A4BCC61FB6B6A400B848DC /* PBXTargetDependency */,
+			);
+			name = RecyclARTests;
+			productName = RecyclARTests;
+			productReference = 97A4BCC41FB6B6A400B848DC /* RecyclARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97A4BCCE1FB6B6A400B848DC /* RecyclARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A4BCDE1FB6B6A400B848DC /* Build configuration list for PBXNativeTarget "RecyclARUITests" */;
+			buildPhases = (
+				AFD6C0911B70CE63445D32BC /* [CP] Check Pods Manifest.lock */,
+				97A4BCCB1FB6B6A400B848DC /* Sources */,
+				97A4BCCC1FB6B6A400B848DC /* Frameworks */,
+				97A4BCCD1FB6B6A400B848DC /* Resources */,
+				9B182C99CD5732035BD6FD8B /* [CP] Embed Pods Frameworks */,
+				F0B1944DAA897B5847C349EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A4BCD11FB6B6A400B848DC /* PBXTargetDependency */,
+			);
+			name = RecyclARUITests;
+			productName = RecyclARUITests;
+			productReference = 97A4BCCF1FB6B6A400B848DC /* RecyclARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97A4BCA61FB6B6A300B848DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Soon Sung Hong";
+				TargetAttributes = {
+					97A4BCAD1FB6B6A400B848DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					97A4BCC31FB6B6A400B848DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 97A4BCAD1FB6B6A400B848DC;
+					};
+					97A4BCCE1FB6B6A400B848DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 97A4BCAD1FB6B6A400B848DC;
+					};
+				};
+			};
+			buildConfigurationList = 97A4BCA91FB6B6A300B848DC /* Build configuration list for PBXProject "RecyclAR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97A4BCA51FB6B6A300B848DC;
+			productRefGroup = 97A4BCAF1FB6B6A400B848DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97A4BCAD1FB6B6A400B848DC /* RecyclAR */,
+				97A4BCC31FB6B6A400B848DC /* RecyclARTests */,
+				97A4BCCE1FB6B6A400B848DC /* RecyclARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97A4BCAC1FB6B6A400B848DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B9BAD51FB7398E0086330D /* 002-recycle.png in Resources */,
+				97A96A831FB8600B00F4C3FC /* recycling.png in Resources */,
+				97A96A7F1FB83A8B00F4C3FC /* erecycling.png in Resources */,
+				97A96A811FB8600200F4C3FC /* 001-recycling.png in Resources */,
+				97B9BAD71FB73A0C0086330D /* 001-recycling.png in Resources */,
+				97A4BCB41FB6B6A400B848DC /* art.scnassets in Resources */,
+				97A96A491FB80BF900F4C3FC /* reload.png in Resources */,
+				97A4BCBE1FB6B6A400B848DC /* LaunchScreen.storyboard in Resources */,
+				97A96A4D1FB80DC300F4C3FC /* refresh-arrow.png in Resources */,
+				97B9BAD91FB7A5960086330D /* 001-recycling2.png in Resources */,
+				97A96A871FB8602E00F4C3FC /* refresh-arrow (1).png in Resources */,
+				97A96A4B1FB80CF000F4C3FC /* recycling.png in Resources */,
+				97A96A471FB7E7C600F4C3FC /* nuclear-power (1).png in Resources */,
+				97A96A4F1FB80E2900F4C3FC /* refresh-arrow (1).png in Resources */,
+				97A4BCBB1FB6B6A400B848DC /* Assets.xcassets in Resources */,
+				97A96A851FB8602300F4C3FC /* nuclear-power (1).png in Resources */,
+				97A4BCB91FB6B6A400B848DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A4BCC21FB6B6A400B848DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A4BCCD1FB6B6A400B848DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		262946A56BC08AD93392D1B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RecyclAR/Pods-RecyclAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCloudWatch/AWSCloudWatch.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSElasticLoadBalancing/AWSElasticLoadBalancing.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLambda/AWSLambda.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLex/AWSLex.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMachineLearning/AWSMachineLearning.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileAnalytics/AWSMobileAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPolly/AWSPolly.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCloudWatch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSElasticLoadBalancing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLambda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMachineLearning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPolly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecyclAR/Pods-RecyclAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B182C99CD5732035BD6FD8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecyclARUITests/Pods-RecyclARUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BB8011EE44DE28E12A9F6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecyclARTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD6C0911B70CE63445D32BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecyclARUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E71051CCC328D84BFA14E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecyclARTests/Pods-RecyclARTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D53D1421B5BE6897E4791A75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecyclAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3482DBBCF8E29D87F438D8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecyclARTests/Pods-RecyclARTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB03BF6216E6E3BBA28060B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecyclAR/Pods-RecyclAR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B1944DAA897B5847C349EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecyclARUITests/Pods-RecyclARUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97A4BCAA1FB6B6A400B848DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A4BCB61FB6B6A400B848DC /* ViewController.swift in Sources */,
+				97A96A511FB826CD00F4C3FC /* AWSDBHelper.swift in Sources */,
+				97A4BCB21FB6B6A400B848DC /* AppDelegate.swift in Sources */,
+				9758734D1FB7C0D200A9F26C /* GoogleAPIHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A4BCC01FB6B6A400B848DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A4BCC91FB6B6A400B848DC /* RecyclARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A4BCCB1FB6B6A400B848DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A4BCD41FB6B6A400B848DC /* RecyclARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97A4BCC61FB6B6A400B848DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A4BCAD1FB6B6A400B848DC /* RecyclAR */;
+			targetProxy = 97A4BCC51FB6B6A400B848DC /* PBXContainerItemProxy */;
+		};
+		97A4BCD11FB6B6A400B848DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A4BCAD1FB6B6A400B848DC /* RecyclAR */;
+			targetProxy = 97A4BCD01FB6B6A400B848DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97A4BCB71FB6B6A400B848DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A4BCB81FB6B6A400B848DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97A4BCBC1FB6B6A400B848DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A4BCBD1FB6B6A400B848DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97A4BCD61FB6B6A400B848DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97A4BCD71FB6B6A400B848DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97A4BCD91FB6B6A400B848DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D846051604D3D5C9CE8BA85C /* Pods-RecyclAR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NYRJ58T89;
+				INFOPLIST_FILE = RecyclAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = backseat.RecyclAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97A4BCDA1FB6B6A400B848DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD016F5F64BB99718DA66B42 /* Pods-RecyclAR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NYRJ58T89;
+				INFOPLIST_FILE = RecyclAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = backseat.RecyclAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97A4BCDC1FB6B6A400B848DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA675759CC38E9B75794285 /* Pods-RecyclARTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RecyclARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = backseat.RecyclARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecyclAR.app/RecyclAR";
+			};
+			name = Debug;
+		};
+		97A4BCDD1FB6B6A400B848DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83904A75333D0120D4DA8441 /* Pods-RecyclARTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RecyclARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = backseat.RecyclARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecyclAR.app/RecyclAR";
+			};
+			name = Release;
+		};
+		97A4BCDF1FB6B6A400B848DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B9A61DEDD557C6E7E40637 /* Pods-RecyclARUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RecyclARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = backseat.RecyclARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecyclAR;
+			};
+			name = Debug;
+		};
+		97A4BCE01FB6B6A400B848DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CAB9786E2A56DF153FD49A7 /* Pods-RecyclARUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RecyclARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = backseat.RecyclARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RecyclAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97A4BCA91FB6B6A300B848DC /* Build configuration list for PBXProject "RecyclAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A4BCD61FB6B6A400B848DC /* Debug */,
+				97A4BCD71FB6B6A400B848DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A4BCD81FB6B6A400B848DC /* Build configuration list for PBXNativeTarget "RecyclAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A4BCD91FB6B6A400B848DC /* Debug */,
+				97A4BCDA1FB6B6A400B848DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A4BCDB1FB6B6A400B848DC /* Build configuration list for PBXNativeTarget "RecyclARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A4BCDC1FB6B6A400B848DC /* Debug */,
+				97A4BCDD1FB6B6A400B848DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A4BCDE1FB6B6A400B848DC /* Build configuration list for PBXNativeTarget "RecyclARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A4BCDF1FB6B6A400B848DC /* Debug */,
+				97A4BCE01FB6B6A400B848DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97A4BCA61FB6B6A300B848DC /* Project object */;
+}
