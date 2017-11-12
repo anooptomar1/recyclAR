@@ -1,5 +1,3 @@
-from data_access_recycle import *
-#from RecyclAR import data_access_recycle
 from twilio.rest import Client
 
 from flask import Flask, request, session
